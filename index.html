@@ -5,10 +5,53 @@
             This is my first website :D
         </title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="perfet.png">
     </head>
-    <body style = "background-color: grey;">
+    <body>
+        <h1 id="h1">HeADER 1</h1>
         <p>You can still use "this" but still better to have <q>THIS</q> </p>
         <p>YAYAYYAYAY</p>
+        <a href="https://youtube.com" target="_blank" title="It's a youtube">A LINK</a>
+        <button onclick="">just a button</button>
+
+        <h1 id="h2">You can use id to jump back</h2>
+        <a href="#h1">press here to jump to header 1</a>
+        <img src="Illya/on.png" width=100>
+
+        <h1>Tableeeeee</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Fav</th>
+            </tr>
+            <tr>
+                <td>Lap</td>
+                <td>18</td>
+                <td>gai</td>
+            </tr>
+        </table>
+        <h1>Class stuff</h1>
+        <div class="verycool">
+            <p>THIS is sO COOl</p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ez1Yj0ujGPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="400" name="iframe_i">Nah</iframe>
+        <p><a href="https://typemoon.fandom.com/wiki/Illyasviel_von_Einzbern" target="iframe_i">Press to know about Illya</a></p> 
+        <h1>Finally JVS</h1>
+        <h2 id = "ttest">hiiii</h2>
+        <script>
+            document.getElementById("ttest").innerHTML = "Hello javascript! You sucks, Ja va sờ críp sux!"
+        </script>
+        <div class="verycool">
+            <button type="button" onclick= "document.getElementById('ttest').innerHTML = 'heeeeee'">Change to heeee</button>
+            <button type="button" onclick= "document.getElementById('ttest').style.color = 'pink'">Change color to pink</button>
+            <button type="button" onclick= "document.getElementById('ttest').style.fontSize = '30px'">Change size</button>
+            <button type="button" onclick= "document.getElementById('ttest').style.backgroundColor = 'purple'">Change background</button>
+        </div>
+        
+
 
     </body>
 </html>
