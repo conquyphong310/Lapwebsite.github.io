@@ -1,3 +1,9 @@
+:root{
+    --img_box_color: rgb(224, 20, 76);
+    --main_bg_color: rgb(255, 151, 193);
+    --sidebar_color: rgb(255, 88, 88);
+    --selected: #ff3636;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -8,7 +14,7 @@
 
 }
 body,html {
-    height: 100%;
+    height: 100vh;
 }
 .navbar {
     background-color: rgb(240, 98, 146);
@@ -46,6 +52,7 @@ body,html {
     display: flex;
     justify-content: center;
     background-color: rgb(67, 44, 122);
+    cursor: default;
 }
 .option_btn{
     display: inline-block;
@@ -53,7 +60,7 @@ body,html {
     color: white;
 }
 .active{
-    color: red;
+    color: var(--selected);
 }
 .option_btn:hover{
     transition: 0.2s;
@@ -61,23 +68,20 @@ body,html {
     cursor: pointer;
 }
 
-.illya{
-    --color: rgb(224, 20, 76);
-    --main_bg_color: rgb(255, 151, 193);
-}
+
 
 .maincontent {
     display:flex;
     padding: 10px;
     background-color: var(--main_bg_color);
-    height: 100%;
+    height: 100vh;
 }
 .images_box {
     width: 75%;
     margin-right: 5px;
     padding: 5px;
     border-radius: 6px;
-    background-color: var(--color);
+    background-color: var(--img_box_color);
 }
 .images_box_heading {
     text-align: center;
@@ -91,9 +95,8 @@ body,html {
     justify-content: space-evenly;
 }
 .images_box_card{
-    float: left;
     margin: 10px;
-    background-color:rgb(255, 151, 193);
+    background-color:var(--main_bg_color);
     border-radius: 10px;
     box-shadow: 5px 5px 5px;
 }
@@ -111,5 +114,5 @@ body,html {
     flex-grow: 1;
     padding: 5px;
     border-radius: 6px;
-    background-color: rgb(255, 88, 88);
+    background-color: var(--sidebar_color);
 }
