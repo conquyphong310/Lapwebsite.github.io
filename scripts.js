@@ -1,26 +1,39 @@
 const theme = [
     {
-    "img_box_color": "rgb(224, 20, 76)",
-    "main_bg_color": "rgb(255, 151, 193)",
-    "sidebar_color": "rgb(220, 228, 228)",
-    "image": ["Illya_img/Night_view.jpg","Illya_img/on.png","Illya_img/pokemon.jpg","Illya_img/illya 2.jpg"],
-    "caption": ["Night city","Yukata","Pokemon","😍"]
+        "img_box_color": "rgb(224, 20, 76)",
+        "main_bg_color": "rgb(255, 151, 193)",
+        "sidebar_color": "rgb(255, 88, 88)",
+        "image": ["Illya_img/Night_view.jpg","Illya_img/on.png","Illya_img/pokemon.jpg","Illya_img/illya 2.jpg"],
+        "caption": ["Night city","Yukata","Pokemon","😍"]
     },
     {
-    "img_box_color": "#137a7f",
-    "main_bg_color": "#86cecb",
-    "sidebar_color": "#e12885",
-    "image": ["miku_img/miku_ocean.jpg","miku_img/miku_smile.jpg","miku_img/miku_smol.jpg","miku_img/miku_vamp.jpg"],
-    "caption": ["Water","😂","cute","(㇏(•̀ᵥᵥ•́)ノ)"]
+        "img_box_color": "#137a7f",
+        "main_bg_color": "#86cecb",
+        "sidebar_color": "#e12885",
+        "image": ["miku_img/miku_ocean.jpg","miku_img/miku_smile.jpg","miku_img/miku_smol.jpg","miku_img/miku_vamp.jpg"],
+        "caption": ["Water","😂","cute","(㇏(•̀ᵥᵥ•́)ノ)"]
     },
     {
-    "img_box_color": "rgb(24, 20, 7)",
-    "main_bg_color": "rgb(55, 11, 153)",
-    "sidebar_color": "rgb(25, 88, 88)",
-    "image": ["miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg"],
-    "caption": ["Water","😂","cute","(㇏(•̀ᵥᵥ•́)ノ)"]
+        "img_box_color": "rgb(24, 20, 7)",
+        "main_bg_color": "rgb(55, 11, 153)",
+        "sidebar_color": "rgb(25, 88, 88)",
+        "image": ["miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg"],
+        "caption": ["Water","😂","cute","(㇏(•̀ᵥᵥ•́)ノ)"]
     },
-
+    {
+        "img_box_color": "rgb(24, 20, 7)",
+        "main_bg_color": "rgb(55, 11, 153)",
+        "sidebar_color": "rgb(25, 88, 88)",
+        "image": ["miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg"],
+        "caption": ["Water","😂","cute","(㇏(•̀ᵥᵥ•́)ノ)"]
+    },
+    {
+        "img_box_color": "rgb(24, 20, 7)",
+        "main_bg_color": "rgb(55, 11, 153)",
+        "sidebar_color": "rgb(25, 88, 88)",
+        "image": ["miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg","miku_img/miku_ocean.jpg"],
+        "caption": ["Water","😂","cute","(㇏(•̀ᵥᵥ•́)ノ)"]
+    }
 ];
 
 
@@ -40,6 +53,15 @@ for (let i=0;i<opt.length;i++){
             card[j].children.item(1).innerHTML = theme[i].caption[j];
         }
     }
+}
+
+function showpopup(){
+    let popup_lap = document.getElementById("popup");
+    popup_lap.style.visibility = "visible";
+}
+function closepopup(){
+    let popup_lap = document.getElementById("popup");
+    popup_lap.style.visibility = "hidden";
 }
 
 
